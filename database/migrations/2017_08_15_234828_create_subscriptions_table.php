@@ -16,7 +16,7 @@ class CreateSubscriptionsTable extends Migration
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('email')->index();
-            $table->integer('state_id');
+            $table->integer('state_id')->unsigned();
             $table->foreign('state_id')->references('id')->on('states');
             $table->timestamps();
         });
