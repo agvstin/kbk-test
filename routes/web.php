@@ -1,4 +1,7 @@
 <?php
+use App\State;
+use App\Subscription;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,6 +14,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SubscriptionController@form');
+Route::post('/subscribe', 'SubscriptionController@subscribe');
