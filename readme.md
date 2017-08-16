@@ -9,6 +9,12 @@ No es importante la parte estética pero obviamente, si se ve mejor suma.
 
 ## Setup
 
+Asumiendo que tenemos `composer` instalado, instalamos los vendors:
+
+```
+composer install
+```
+
 Para inicializar la aplicación hace falta generar la base de datos e importar los datos.
 
 Después de configurar los datos de la conexion a la base de datos en el archivo `.env`,
