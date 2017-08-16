@@ -12,6 +12,7 @@ class StatesTableSeeder extends Seeder
      */
     public function run()
     {
+        // Unguard model to be able to set all properties
     	State::unguard();
 
     	$fd = fopen(__DIR__ .'/states.csv', 'r');
